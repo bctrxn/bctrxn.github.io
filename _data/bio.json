@@ -1,0 +1,48 @@
+{
+  "basics": {
+    "name": "Bao Tran",
+    "label": "Student",
+    "picture": "https://github.com/bctrxn.png",
+    "email": "bctran@hawaii.edu",
+    "website": "https://bctrxn.github.io",
+    "summary": "I am studying for a B.B.A in Fiannce, Management, and Management Information System at the University of Hawaii. I expect to graduate in Spring 2024.",
+    "location": { "2500 Campus Road": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "bctrxn", "url": "http://github.com/bctrxn" }
+    ]
+  },
+  "interests": [
+    { "name": "Shopping" },
+    { "name": "Travelling" },
+    { "name": "Gardening" }
+  ],
+  "skills": [
+    {
+      "name": "Art",
+      "keywords": [ "Crosshatch", "Pointilism", "Watercolor"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Finance, Management, MIS (expected Spring 2024)",
+      "studyType": "B.B.A",
+      "startDate": "2019-08-20",
+      "endDate": "2024-05-15"
+    }
+  ],
+  "work": [
+    {
+      "company": "Hawaii Department of Education",
+      "position": "Substitute Teacher",
+      "website": "",
+      "startDate": "2023-01-04",
+      "endDate": "Present"
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

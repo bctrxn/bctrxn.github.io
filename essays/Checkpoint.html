@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Checkpoint Assignment #3 | Bao Tran | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/bctrxn.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bao Tran | Professional Portfolio">
+    <meta property="og:url" content="https://bctrxn.github.io/essays/Checkpoint.html">
+    <meta property="og:title" content="Checkpoint Assignment #3 | Bao Tran | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/bctrxn.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Checkpoint Assignment #3 | Bao Tran | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Bao Tran</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Checkpoint Assignment #3</h1>
+  <span class="date">27 Apr 2023</span>
+  <hr>
+  <ol>
+  <li>Link to my screencast <a href="https://youtu.be/EgVxgw8ezFo">here</a></li>
+</ol>
+
+<p>Site Map
+<img src="https://github.com/bctrxn/bctrxn.github.io/blob/main/site_map.jpeg" alt="sitema" /></p>
+
+<ol>
+  <li>
+    <p>Describe your design for your site’s shopping cart. That is, will it be a separate page that the user can view and edit, or will it be integrated into the product pages? If so, describe in detail how this will work on your site. Provide several examples of using the cart.
+My shopping cart will be a separate file that displays the user’s session information. Users can access the cart at any time and they can also update the cart from the cart page without having to go back to the products display page. When users click complete purchase on the cart page, they will be redirected to the invoice.</p>
+  </li>
+  <li>Explain specifically how you will use sessions to manage your shopping cart. In particular, what shopping cart data will be stored in the session, what data format will be used (NOT what data type, but the format like with the data format used for your registration data). Use code examples showing what data structures (such as arrays and their objects) you will use to manage the shopping cart data and how they will be used in a session.
+I will store the user’s selected quantities in the session and will use that to display their cart information, as well as to make values in input boxes sticky.
+    <ul>
+      <li>The session will be managed on the server side and sent to the client side whenever a request for the cart is made.</li>
+      <li>I will store the different product categories in the cart as arrays and the values within those arrays will be the values that the user selected.</li>
+      <li>Every time the user adds another product to their cart, the quantity they selected will be pushed to the array.</li>
+    </ul>
+  </li>
+  <li>
+    <p>How will you avoid access to your application when the user has not logged in or registered? What are the particular security concerns you must address?
+I will address login security concerns using cookies. When the user logs in, i will give them a cookie that verifies that they have entered the appropriate credentials and are able to complete the purchase. If a user does not have a cookie, I will send them to the login page when they try to proceed to the invoice. Each cookie will last 15 minutes. After 15 minutes is up, the user will be logged out and will have to log back in again if they wish to complete their purchase.</p>
+  </li>
+  <li>
+    <p>Upon a successful login, how do you provide personalization in your UI? Explain how you did or will do this (paste code if necessary)
+Upon successful login, I will change the login button on the nav bar to display the user’s name. I will also add welcome messages to the home and invoice pages. I will also make it so the total number of items in the user’s cart is displayed on the nav bar.</p>
+  </li>
+  <li>
+    <p>If you are working with partners, how will you split up the work in your team so that you are working in parallel as effectively as possible? That is, who is doing what and when?
+I am not working with a partner.</p>
+  </li>
+  <li>How are you approaching Assignment 3 differently than Assignment 2?
+I used the same files as assignment 2. However, I had to adjust the for loops to take into account the three different categories of products and I also had to re-route the path of my site. This is because the user can now log in at any time and they can also add and remove items from the cart without needing to log in.</li>
+</ol>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
